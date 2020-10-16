@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Among Us Java</title>
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css">
+</head>
+<style>
+</style>
+
+<body>
+    <header>
+    <nav>
+        <ul>
+            <li><a href="HomeAmong.html" style="color: lightblue">Home</a></li>
+            <li><a href="AmongUs.html" style="color: lightblue">About Me</a></li>
+            <li><a href="Gameplay.html" style="color: lightblue">Gameplay</a></li>
+            <li><a href="AmongVid.html" style="color: lightblue">Among Us Videos</a></li>
+            <li class="selected">Java Among Us</li>
+        </ul>
+    </nav>
+    </header>
+    <p class="betatip">This part of the site is beta java experiments, don't expect it to work.</p>
+    <p class="boi"><img id="display-image" onclick="swapImage()" src="images/mycharacter.png" width="180" />
+    </p>
+    <p class="lazar1">Click the image to change it.</p>
+    <script>
+        function swapImage() {
+            var imageDisplayed = document.getElementById('display-image') ;
+            if (imageDisplayed.src.match("images/mycharacter.png")) {
+                imageDisplayed.src = "images/char2.png";
+            } else {
+                imageDisplayed.src = "images/mycharacter.png";
+            }
+        }
+    </script>
+    <p class="lazar1">This shows links to my java experiments.</p>
+    <table>
+    <tr>
+    <th>Java No.1</th><th>Java No.2</th><th>Java No.3</th><th>Java No.4</th>
+    </tr>
+    <tr>
+    <td>Click image</td><td>Place</td><td>Place</td><td>Place</td>
+    </tr>
+    </table>
+
+</body>
+
+</html>
